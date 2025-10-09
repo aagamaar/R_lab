@@ -1,5 +1,3 @@
-height <- c(160, 165, 170, 175, 180, 185)
-freq <- c(2, 3, 5, 4, 3, 1)
-midpoints <- height + 2.5
-data <- rep(midpoints, freq)
-hist(data, main = "Histogram of Height", xlab = "Height(cm)", ylab = "Freq", col = "black", border = "grey")
+data <- c(rep(137.5, 4), rep(142.5, 12), rep(147.5, 16), rep(152.5, 8))
+breaks <- c(135, 140, 145, 150, 155)
+hist( data, breaks=breaks, main="Height of Students", xlab="Height (cm)", ylab="No. of students")
